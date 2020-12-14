@@ -1,0 +1,115 @@
+/* Section 3 */
+* {
+  margin: 0;
+  padding: 0;
+  box-lines: 0;
+}
+
+body {
+  background: #17181a;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#Logo {
+  color: white;
+  font-family: "abril fatface";
+}
+/* .nav-header {
+  min-height: 100vh;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 10%;
+  margin: auto;
+  padding: 0.5rem;
+} */
+
+.section-3 center {
+  width: 40%;
+  height: 5px;
+  padding: 10rem 0;
+  background-color: rgb(84, 84, 216);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-wrapper {
+  width: 60%;
+  flex-wrap: wrap;
+  margin: 20%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 2rem 0rem;
+  background-color: rgb(158, 116, 116); /*158, 116, 116*/
+  box-shadow: 0.3rem 0.3rem 0.5rem #777;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
+}
+
+.project:hover {
+  box-shadow: 1rem 1rem 1rem #777;
+}
+
+.project-text {
+  text-align: center;
+  letter-spacing: 0.05rem;
+  position: absolute;
+  top: -10rem;
+  z-index: 10;
+  transition: side 0.3s;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.project:hover .project-text {
+  top: 5rem;
+  transition: top 0.3s;
+}
+
+.project-technologies {
+  font-size: 1.2rem;
+  color: #ee4411;
+}
+
+.project-img {
+  width: 40rem;
+  transition: opacity 0.3 s;
+}
+.project:hover .project-img {
+  opacity: 0.2;
+}
+
+.project-link {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 0.1rem;
+  border: 0.3rem solid #ee4411;
+  padding: 0 3.2rem;
+  height: 2rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.project:hover .project-link {
+  bottom: 5rem;
+  transition: 0.3s 0.3s;
+}
+
+/* End of Section 3 */
