@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,67 @@
     <link rel="stylesheet" href="contact.css">
     <title>Contact</title>
 </head>
+
 <body>
     <!-- Section 4-->
-    <section class="contact" id="contact">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="#home" id="navbar_logo">ALAN CHOK</a>
+            <!-- bar logo so menu slide down -->
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="./portfolio.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="./aboutme/aboutme.html" class="navbar_links" id="about-page">About</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="./project/projects.html" class="navbar_links" id="service-page">Project</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="#Sign-up" class="button" id="signup">Sign Up</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <div class="cont1">
+            <p> <img src="../images/logo192.png" width="650"> </p>
+            <!--https://thewholeworldornothing.com/wp-content/uploads/2017/02/Best-Travel-Games-For-Adults-Banner.jpg -->
+            <br><br><br><br><br>
+        </div>
+
+        <!--this section controls the contact form and written by Seyi Idowu -->
+        <div class="cont2">
+            <br><br>
+            <h2>Contact</h2> <br>
+            <p style="font-size: medium;"><b>Let's Work Together</b></p><br>
+            <i class="fa fa-map-marker" style="font-size: 36"></i> Calgary, Canada<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: 1 403 999 9999<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: alchok@live.com<br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="input " type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="input " type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="input " type="text" placeholder="Message" required name="Message"></p>
+                <p><button class="button " type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- <section class="contact" id="contact">
         <div class="container">
-            <h1 class="section-heading section-4-heading">Contact</h1>
-                <h4>Lets work together</h4>
+            <h1 class="section-heading ">Contact</h1>
+            <h4>Lets work together</h4>
             <form action="">
                 <label for="name"></label>
                 <input type="text" id="name" name="name" placeholder="Enter your name.." required:>
@@ -29,19 +85,20 @@
                 <input type="submit" value="Submit">
             </form>
         </div>
-    </section>
+    </section> -->
 
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
             <p>&copy; Alan Chok</p>
         </div>
-       
+
 
     </footer>
-  </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="main.js"></script>
+    <script src="contact.js"></script>
 </body>
+
 </html>

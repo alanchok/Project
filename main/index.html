@@ -1,19 +1,100 @@
-```
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../aboutme.css" />
+    <link rel="stylesheet" href="../Main/app.css" />
     <!-- <link rel="stylesheet" href="" -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" />
 
     <title>Document</title>
 </head>
 
-<body data-barba="wrapper">
-    <header class="nav-header">
+<body>
+
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="../portfolio.html" id="navbar_logo">ALAN CHOK</a>
+            <!-- bar logo so menu slide down -->
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="./portfolio.html" class="navbar_links" id="home-page">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="./aboutme/aboutme.html" class="navbar_links" id="about-page">About</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="./project/projects.html" class="navbar_links" id="service-page">Project</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="#Sign-up" class="button" id="signup">Sign Up</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- services -->
+
+    <div class="services" id="services">
+        <h1>My Skills</h1>
+        <div class="services_wrapper">
+            <div class="services_card">
+                <h2>Javascript</h2>
+                <p> Al Skills Technology</p>
+                <div class="services_btn"><button>Get Started</button></div>
+            </div>
+
+            <div class="services_card">
+                <h2>Are You Ready</h2>
+                <p>Take the Leap</p>
+                <div class="services_btn"><button>Get Started</button></div>
+            </div>
+
+            <div class="services_card">
+                <h2>C#</h2>
+                <p> 100% Combination</p>
+                <div class="services_btn"><button>Get Started</button></div>
+            </div>
+
+            <div class="services_card">
+                <h2>The Choice is Yours</h2>
+                <p> 1000s Colours</p>
+                <div class="services_btn"><button>Get Started</button></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature Section -->
+    <div class="main" id="sign-up">
+
+        <div class="main_container">
+
+            <div class="main_content">
+                <h1>I believe in being the change</h1>
+                <h2>with a combination of impacting to create a difference</h2>
+                <p> Why? </p>
+                <button class="main_btn"><a href="#">Click here to learn more</a></button>
+            </div>
+            <div class="main_img-container">
+                <div class="main_img-card" id="card-2">
+                    <i class="fas fa-users"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <header class="nav-header">
         <h1><a href="./fashion.html" id="logo">days.</a>
         </h1>
         <div class="burger">
@@ -64,10 +145,10 @@
         <!-- <div class="cursor">
             <span class="cursor-text"></span>
         </div> -->
-        <div class="contact">
-            <h2> Stay in Touch</h2>
-            <p>Let's Work Together</p>
-        </div>
+    <div class="contact">
+        <h2> Stay in Touch</h2>
+        <p>Let's Work Together</p>
+    </div>
     </nav>
     <div class="cursor">
         <span class="cursor-text"></span>
@@ -91,7 +172,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
         integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
         crossorigin="anonymous"></script>
-    <script src="../aboutme.js"></script>
+    <script src="../aboutme.js"></script> -->
 </body>
 
 </html>
