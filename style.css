@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  background: #131313;
+  background: #f7f1f1; /*#a19696*/ /*#131313*/
   height: 80px;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
 }
 
 #navbar_logo {
-  background-color: #ff8177;
+  /* background-color: #ff8177; */
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
   -webkit-background-clip: text;
@@ -73,24 +73,6 @@
   padding: 0 1rem;
   width: 100%;
 }
-/* the signup button */
-.button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  padding: 10px 20px;
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  color: #fff;
-  transition: all 0.3s ease;
-}
 
 .navbar_links:hover {
   color: #9518fc;
@@ -121,7 +103,7 @@ S .navbar_container {
 
 /* menu navbar makes it center */
 .navbar_menu.active {
-  background: #131313;
+  background: #a19696;
   top: 100%;
   opacity: 1;
   transition: all 0.5s ease;
@@ -139,7 +121,7 @@ S .navbar_container {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background: #fff;
+  background: rgb(3, 2, 2);
 }
 
 .navbar_item {
@@ -173,6 +155,7 @@ S .navbar_container {
   transform: translate(5%, 20%);
 }
 
+/* the burger  */
 .navbar_toggle .bar {
   display: block;
   cursor: pointer;
@@ -190,11 +173,12 @@ S .navbar_container {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Hero Section */
+/* Hero Section  Welcome Menu section*/
+
 .hero {
-  background: #332a2a;
-  background: linear-gradient(to right, #161616, #000000);
-  padding: 100px 0;
+  background: #a19696; /*#332a2a*/
+  background: linear-gradient(to right, #161616#f7f1f1, #a19696);
+  padding: 25px 0;
 }
 
 .hero_container {
@@ -202,17 +186,17 @@ S .navbar_container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  height: 90%;
+  height: 20%;
   text-align: center;
-  padding: 30px;
+  padding: 5px;
 }
 /* choose your title */
 .hero_heading {
   /* title heading choose */
-  font-size: 100px;
-  margin-bottom: 24px;
+  font-size: 35px;
+  margin-bottom: 5px;
   color: #fff;
 }
 
@@ -229,7 +213,7 @@ S .navbar_container {
 }
 
 .hero_description {
-  font-size: 80px;
+  font-size: 40px;
   background: #ee0979; /*  title Color   */
   background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
   background: linear-gradient(to right, #ff6a00, #ee0979);
@@ -256,8 +240,9 @@ S .navbar_container {
 }
 
 /* About Section */
+/* my picture part */
 .main {
-  background-color: #131313;
+  background-color: #ffffff;
   padding: 5rem 0;
 }
 
@@ -267,7 +252,7 @@ S .navbar_container {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  margin: 0 20%;
+  margin: 0 15%;
   height: 50%;
   z-index: 1;
   width: 100%;
@@ -277,7 +262,7 @@ S .navbar_container {
 
 .main_content {
   color: #fff;
-  width: 150%;
+  width: 100%;
 }
 
 .main_content h1 {
@@ -293,35 +278,27 @@ S .navbar_container {
   margin-bottom: 10px;
 }
 
-/* my picture content*/
-.main_content h2 {
-  font-size: 2rem;
+/* my picture content*
+/**/
+/* .main_content h2 {
+  font-size: 1rem;
   background: #ff8177; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #9114ff,
-    #da22ff
-  ); /*Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8f0eff,
-    #da22ff
-  ); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
+  background: linear-gradient(to right, #8f0eff, #da22ff);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
+  -moz-text-fill-color: transparent; */
 
+/*unlimited explore*/
 .main_content p {
   margin-top: 0.5rem;
   font-size: 1.5rem;
   font-weight: 100;
   justify-content: space-evenly;
-  /* align-content: 100px; */
 }
-
+/* unlimited buttom*/
 .main_btn {
   font-size: 1.5rem;
   background: #833ab4;
@@ -359,28 +336,16 @@ S .navbar_container {
 .main_btn:hover {
   color: #fff;
 }
-/* explore butto nslide over animation */
+
+/* explore button slide over animation */
 .main_btn:hover:after {
   width: 100%;
 }
 
 .main_img-container img {
   text-align: center;
-  width: 25rem;
-  height: 25rem;
-}
-
-/* the icon picture card */
-.main_img-card {
-  margin: 10px;
-  height: 250px;
-  width: 350px;
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column; /* linear-gradient(to right, #00dbde 0%, #fc00ff 100%);*/
-  justify-content: center;
-  color: #fff;
-  /* background-image: url(Alan.png); */
+  width: 20rem;
+  height: 20rem;
 }
 
 .fa-layer-group,
@@ -388,14 +353,14 @@ S .navbar_container {
   font-size: 14rem;
 }
 /* icon*/
-#card-2 {
+/* #card-2 {
   background: #ff512f;
   background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
   background: linear-gradient(to right, #dd2476, #ff512f);
-}
+} */
 
 /* Mobile Responsive */
-@media screen and (max-width: 1100px) {
+/* @media screen and (max-width: 1100px) {
   .main_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -404,45 +369,44 @@ S .navbar_container {
     width: 80%;
     margin: 0 auto;
     height: 80%;
-  }
+  } */
 
-  .main_img-container {
+/* .main_img-container {
     display: flex;
     justify-content: center;
-  }
+  } */
 
-  .main_img-card {
+/* .main_img-card {
     height: 425px;
     width: 425px;
-  }
+  } */
 
-  .main_content {
+/* .main_content {
     text-align: center;
     margin-bottom: 4rem;
-  }
+  } */
 
-  .main_content h1 {
+/* .main_content h1 {
     font-size: 2.5rem;
     margin-top: 2rem;
-  }
+  } */
 
-  .main_content h2 {
+/* .main_content h2 {
     font-size: 3rem;
-  }
+  } */
 
-  .main_content p {
+/* .main_content p {
     margin-top: 1rem;
     font-size: 1.5rem;
-  }
-}
+  } */
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .main_img-card {
     width: 250px;
     height: 250px;
-  }
+  } */
 
-  .fa-users,
+/* .fa-users,
   .fa-layer-group {
     font-size: 4rem;
   }
@@ -463,17 +427,17 @@ S .navbar_container {
     padding: 12px 36px;
     margin: 2.5rem 0;
   }
-}
+} */
 
-/* Services Section */
+/* Services Section Skills card box */
 .services {
-  background: #2c2a2c;
+  background: #f3eef3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
-  padding: 5rem 0;
+  height: 5%;
+  padding: 2rem 0.5rem;
 }
 
 .services h1 {
@@ -490,15 +454,16 @@ S .navbar_container {
 
 .services_wrapper {
   display: flex;
-  grid-template-columns: fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
+/* color card box */
 .services_card {
-  margin: 10px;
-  height: 425px;
+  margin: 5px;
+  height: 300px;
   width: 300px;
-  border-radius: 4px;
+  border-radius: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -507,8 +472,9 @@ S .navbar_container {
   transition: 0.3s ease-in;
 }
 
+/* second card color box */
 .services_card:nth-child(2) {
-  background: #1fa2ff; /*fallback for old browsers */
+  background: #1fa2ff;
   background: -webkit-linear-gradient(
     to right,
     #a6ffcb,
@@ -551,7 +517,7 @@ S .navbar_container {
 
 .services_card button {
   color: #fff;
-  padding: 14px 24px;
+  /* padding: 10px 15px; */
   border: none;
   outline: none;
   border-radius: 4px;
@@ -559,10 +525,10 @@ S .navbar_container {
   font-size: 1rem;
 }
 
-.services_card button:hover {
+/* .services_card button:hover {
   cursor: pointer;
-}
-
+} */
+/* pointer hover over the two card box to zoom in */
 .services_card:hover {
   transform: scale(1.075);
   transition: 0.3s ease-in;
@@ -592,7 +558,7 @@ S .navbar_container {
   align-items: center;
 }
 
-#footer_logo {
+/* #footer_logo {
   color: #fff;
   display: flex;
   align-items: center;
@@ -637,4 +603,4 @@ S .navbar_container {
 .footer_link-items a:hover {
   color: #e9e9e9;
   transition: 0.3 ease-out;
-}
+} */

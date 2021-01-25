@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  background: #131313;
+  background: #f7f1f1;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -139,7 +139,7 @@ S .navbar_container {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background: #fff;
+  background: rgb(3, 2, 2);
 }
 
 .navbar_item {
@@ -157,15 +157,16 @@ S .navbar_container {
   padding-bottom: 2rem;
 }
 
-.button {
+/* .button {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
   height: 80px;
   margin: 0;
-}
+} */
 
+/*burger*/
 #mobile-menu {
   position: absolute;
   top: 20%;
@@ -189,55 +190,6 @@ S .navbar_container {
 #mobile-menu.is-active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-
-/* .timeline ul { */
-/* border-left: 4px;
-  border-radius: 0.8rem;
-  background-color: rgb(47, 206, 255);
-  margin: 0 auto;
-  position: absolute;
-  padding: 0.5rem;
-  list-style: none;
-  text-align: left;
-  width: 70%;
-} */
-
-/* .timeline h1 {
-  font-size: 0.2rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  opacity: 0.3;
-} */
-
-/* .timeline .date {
-  border-bottom: 1px solid red;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  position: relative;
-} */
-
-/* .timeline .date::before,
-.timeline .date::after {
-  position: absolute;
-  display: flex;
-  top: 50;
-  transform: translateY(-50%);
-} */
-
-/* .timeline .date::before {
-  content: attr(data-date);
-  left: -21rem;
-  text-align: right;
-  min-width: 12rem;
-  font-size: 1.3rem;
-} */
-
-/* s */
-
-/*End timeline*/
-
-/*Start contact*/
 
 .contact-container {
   display: grid;
@@ -272,59 +224,12 @@ button[type="submit"] {
   background-color: aqua;
 }
 
-/* .contact {
-  display: flex;
-  background-color: #6053be;
-  width: 60%;
-  justify-content: space-between;
-  align-content: flex-start;
-}
-.section-heading {
-  display: grid;
-}
-
-form {
-  justify-content: space-around;
-  width: 50%;
-  margin: 0 auto;
-}
-
-form label {
-  font-size: 1.5rem;
-}
-
-input,
-select,
-textarea {
-  width: 100%;
-  padding: 1rem;
-  margin-bottom: 5px;
-  border: none;
-  outline-color: #fd57bf;
-}
-
-input[type="submit"] {
-  width: initial;
-  background-color: mintcream;
-  color: rgb(168, 214, 99);
-  padding: 1rem 2rem;
-  border-radius: 0.8rem;
-  cursor: pointer;
-  transition: background-color 650ms;
-}
-
-input[type="submit"] :hover {
-  color: #221e3f;
-  background-color: #ffe838;
-} */
-/*End contact*/
-
 /*Start footer*/
 .copyright {
   width: 100%;
   text-align: center;
   background-color: #272742;
-  padding: 2rem 0;
+  padding: 0rem 0;
   position: relative;
 }
 
@@ -350,21 +255,3 @@ input[type="submit"] :hover {
 }
 
 /*End footer*/
-
-/* Alan Chok copyright logo */
-/*Start animations*/
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
-  }
-  70% {
-    box-shadow: 0 0 0 2rem rgba(206, 73, 157, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(160, 55, 163, 0);
-  }
-}
-/*End animations*/
-
-/*Start media queries*/
-/*End media queries*/
